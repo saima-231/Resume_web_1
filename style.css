@@ -9,13 +9,19 @@ body {
 
 .header {
   text-align: center;
-  background-color: #e0f0e9;
-  padding: 20px;
-  border-bottom: 2px solid #ccc;
+  color: #393636;
+  background-color: #bab6b6;
+  padding: 20px 0;
 }
-.profile {
-  width: 120px;
-  border-radius: 10%;
-  display: block;
-  margin: 10px auto;
+.resume{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 40px;
+}
+.profile{
+    width: 120px;
+    border-radius: 30%;
+    display: block;
+    margin: 10px auto;
 }

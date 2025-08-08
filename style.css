@@ -1,27 +1,113 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f8f8f8;
-  margin: 0%;
-  padding: 0%;
-  line-height: 1.6;
-  color: #333;
+/*root{
+      --page-bg: #daeee6;            /* pale mint page background */
+      --card-bg: #ffffff;            /* main white card */
+      --accent: #c9e9d9;             /* subtle accent */
+      --muted: #6f6f6f;              /* secondary text */
+      --text: #222222;               /* main text */
+      --line: #e6e6e6;               /* soft rule lines */
+      --card-width: 920px;           /* overall card width */
+    }*/
+
+* {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 14px;
+  border-radius: 6px;
+  background: linear-gradient(#f8f8f8 50%, #bfb1f7cb 50%);
+  box-sizing: border-box;
 }
 
-.header {
-  text-align: center;
-  color: #393636;
-  background-color: #bab6b6;
-  padding: 20px 0;
-}
-.resume{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    gap: 40px;
-}
-.profile{
-    width: 120px;
-    border-radius: 30%;
-    display: block;
-    margin: 10px auto;
-}
+body {
+   background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        background: white;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    /* LEFT COLUMN */
+    .left {
+        background-color: #2e3b4e;
+        color: white;
+        padding: 30px;
+    }
+    .left h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .left h2 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #d1d1d1;
+    }
+    .profile-pic {
+        width: 100%;
+        max-width: 160px;
+        height: 160px;
+        background: #ccc;
+        border-radius: 50%;
+        margin: 20px auto;
+        display: block;
+    }
+    .section-title {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        padding-bottom: 4px;
+        font-weight: bold;
+    }
+    .left p, .left li {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .contact p {
+        margin: 5px 0;
+    }
+    .skills ul {
+        padding-left: 18px;
+    }
+    .social a {
+        color: #d1d1d1;
+        text-decoration: none;
+        display: block;
+        margin-top: 4px;
+        font-size: 13px;
+    }
+    /* RIGHT COLUMN */
+    .right {
+        padding: 30px;
+    }
+    .right-section {
+        margin-bottom: 25px;
+    }
+    .right-section h3 {
+        font-size: 18px;
+        color: #2e3b4e;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 4px;
+        margin-bottom: 10px;
+    }
+    .right-section h4 {
+        margin: 8px 0 4px;
+        font-size: 15px;
+        color: #333;
+    }
+    .right-section p, .right-section li {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    ul {
+        padding-left: 18px;
+    }
